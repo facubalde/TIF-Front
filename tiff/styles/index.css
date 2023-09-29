@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    display: flex; /* Usamos flexbox para alinear los elementos */
+    justify-content: space-between; /* Espaciado uniforme entre los elementos */
+    align-items: center; /* Centramos verticalmente los elementos */
+    background-color: #685ae7; /* Color de fondo opcional */
+    padding: 20px 30px; /* Espaciado interno opcional */
+}
+a{
+    text-decoration: none;
+}
+/* Estilos para el logo */
+.logo {
+    flex: 1; 
+    text-align: left;
+    color: antiquewhite;
+    font-size: xx-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Estilos para la navegación */
+nav {
+    flex: 2;
+    text-align: center;
+    font-weight: bold; 
+}
+nav a{
+    color: antiquewhite;
+    margin-left: 30px;
+}
+nav a:hover{
+    color: rgb(201, 150, 116);
+
+}
+/* Estilos para el enlace de inicio de sesión */
+.login {
+    flex: 1;
+    text-align: right;
+    font-weight: bold; 
+    
+}
+.login a{
+    color: antiquewhite;
+    font-size: x-large;
+}
+.login a:hover{
+    color: rgb(177, 158, 134);
+}

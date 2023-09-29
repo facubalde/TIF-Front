@@ -1,0 +1,122 @@
+/* Estilo general para ocupar toda la pantalla */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor principal dividido horizontalmente */
+#app {
+    display: flex;
+    height: 100%;
+}
+
+/* Estilo para la lista de servidores */
+#servers {
+    flex: 1;
+    background-color: #36393f;
+    color: #ffffff;
+    text-align: center;
+    /* Estilos adicionales para la lista de servidores */
+}
+#servers input {
+    padding: 20px;
+    border-radius: 50%;
+    background-color: #4e7ad3;
+    color:#ffffff
+}
+/* Estilo para la lista de canales */
+#channels {
+    flex: 2;
+    background-color: #2f3136;
+    color: #ffffff;
+    /* Estilos adicionales para la lista de canales */
+}
+
+/* Estilo para la lista de mensajes */
+#message {
+    margin-left: 5px;
+    position: static;
+    flex: 8;
+    background-color: #202225;
+    color: #ffffff;
+    /* Estilos adicionales para la lista de mensajes */
+
+}
+.input-container{
+    position:absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.input-container input {
+    margin-left: 10px;
+    width: 63%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input-container button {
+    background-color: #7289da;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    bottom: 0;
+}
+
+.input-container button:hover {
+    background-color: #677bc4;
+}
+
+/* Estilo para los mensajes */
+.chat-container {
+margin: 0 auto;
+padding: 20px;
+border-radius: 8px;
+}
+
+.chat-display {
+height: 90%;
+overflow-y: scroll;
+padding: 15px;
+margin-bottom: 10px;
+}
+
+.input-container {
+align-items: center;
+}
+
+input[type="text"] {
+flex: 1;
+padding: 5px;
+border: 1px solid #ddd;
+border-radius: 4px;
+}
+.message-container {
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+margin-bottom: 10px;
+}
+
+.message {
+object-position: center;
+background-color: #0a6691;
+padding: 5px 12px;
+border-radius: 15px;
+max-width: 90%;
+word-wrap: break-word;
+margin-bottom: 15px;
+}
+
+.user-message {
+background-color: #c8e6c9;
+align-self: flex-end;
+margin-right: 0;
+margin-left: auto;
+}
